@@ -4,6 +4,7 @@ We create a website to better display what we are trying to accompmlish.
 Website: 
 
 Note: As a group, this is the first time any of us have tried to develop a dapp. A lot of time was spend watching videos, learning solidity, and mapping out what we should aim for as a final product. We set our sights pretty high and definitely did not achieve exaclty what we set out to do. Instead, we learned a whole lot about the strucuture of dapps and the approach we would take next time we tackle something like this.
+
 Hardhat: A lot of time was spent researching how to implement the chainlink oracle in hardhat, but that did not come to fruition.
 However, we did write a smart contract in hardhat that checks a longitude and latitude to see if it is in the specified location. 
 The real bummer is that we were not able to put it all together for a final product. Next year!
