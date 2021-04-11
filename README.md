@@ -1,7 +1,7 @@
 # NFT-Hunt
 
 We create a website to better display what we are trying to accompmlish.
-Website: 
+Website: https://zahifarah.github.io/nft-hunt/
 
 Note: As a group, this is the first time any of us have tried to develop a dapp. A lot of time was spend watching videos, learning solidity, and mapping out what we should aim for as a final product. We set our sights pretty high and definitely did not achieve exaclty what we set out to do. Instead, we learned a whole lot about the strucuture of dapps and the approach we would take next time we tackle something like this.
 
