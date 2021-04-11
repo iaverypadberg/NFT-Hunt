@@ -32,3 +32,15 @@ Can increase NFT generation based on density of population in those areas.
 Takes a certain amount of time for that NFT to become purchasable in that location again. Include a map showing where the NFT is located and show distance from current user location.
 
 
+Testing Steps:
+1. Copy and paste the Get Location file into remix.
+2. Compile and run the contract on the Kovan testnet.
+3. This contract will need eth and link funding via metamask.
+4. Link Faucet: https://kovan.chain.link/
+5. Eth Faucet: https://faucet.kovan.network/ (You will need to login with github for this one)
+6. Make sure you select the right contract.
+7. After the contract has been created, you should immediately send 1 link to the contract. This will ensure that when you hit "Request Latitude" button the chainlink oracle is being paid.
+8. Accpet the transaction.
+9. Wait 30 seconds
+10. Hit the Latitude button. It should be 2 :)
+
