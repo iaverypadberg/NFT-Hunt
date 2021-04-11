@@ -1,29 +1,23 @@
-// We require the Hardhat Runtime Environment explicitly here. This is optional
-// but useful for running the script in a standalone fashion through `node <script>`.
-//
-// When running the script with `hardhat run <script>` you'll find the Hardhat
-// Runtime Environment's members available in the global scope.
+
 const hre = require("hardhat");
 const BigNumber = require('bignumber.js');
 
 
 
 async function main() {
-  // Hardhat always runs the compile task when running scripts with its command
-  // line interface.
-  //
-  // If this script is run directly using `node` you may want to call compile
-  // manually to make sure everything is compiled
-  // await hre.run('compile');
-
-  // We get the contract to deploy
 
   canBuyNFT = false;
 
   //Chainlink smart contrac will pull in the longitude and latitude here
-  // Change the inputted number to a big number
+  //Change the inputted number to a big number
+  //const FindLocation = await hre.ethers.getContractFactory("FindLocation");
+  //const findLongitude = FindLocation.deploy();
+  //const findLatidue = await FindLocation.deploy();
+
+  //Predetermined location
   latitude = new BigNumber(44.479010);
-  longitude = new BigNumber(-75.213653);
+  longitude = new BigNumber(-73.213653);
+
   // Format the number so that solidty wont complain
   latitude = latitude.shiftedBy(12)
   longitude = longitude.shiftedBy(12)
@@ -37,9 +31,9 @@ async function main() {
   await gps.deployed();
 
 
-  // Call the smart contract with the new coordinates
+  //Call the smart contract with the new coordinates
   //await console.log(gps.setLat(44.479010*100000000));
- // await console.log(gps.setLong(-73.213653*100000000));
+  //await console.log(gps.setLong(-73.213653*100000000));
 
 
   // Run the GPS check coordinates function
@@ -63,7 +57,6 @@ async function main() {
  
   //await gps.setLong(-73.213653*1000000000000);
   number = await gps.getLat()
-  console.log(number.toNumber());
   //latitude = new BigNumber(gps.latitude);
   //console.log(latitude.toNumber());
 

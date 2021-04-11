@@ -43,8 +43,8 @@ contract GPS_Check {
 
     // If the coordinates fit in the box then return true
     require(longBool == true && latBool == true, "Sorry, your current location does not allow you to access this NFT.");
+      console.log("Your GPS coordinates are withint the accpetable range. You may purchase this NFT");
       return true;
-
   }
 
   function getLat() public view returns(int256){
